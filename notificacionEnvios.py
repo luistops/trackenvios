@@ -63,5 +63,5 @@ async def main():
         await check_status()
         await asyncio.sleep(900)
 if __name__ == '__main__':
-    loop = asyncio.get_event_loop()
+    loop = asyncio.new_event_loop()
     loop.run_until_complete(main())
